@@ -6,16 +6,12 @@
     {% assign title = collection.title %}
   {% endif %}
 
-<h1> HELLO</h1>
-
-{{ current_tags }}
-
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}">
   <div class="collection-hero__inner page-width">
     <div class="collection-hero__text-wrapper">
       <h1 class="collection-hero__title">
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
-        {{- collection.title | escape -}}
+        {{- title | escape -}}
       </h1>
 
       {%- if section.settings.show_collection_description -%}
