@@ -1,0 +1,38 @@
+/* Override default styles for the Dawn theme */
+
+/* This is an attempt at adding custom styles, without losing the ability to pull in new releases of the Dawn theme */
+
+.title {
+  text-transform: uppercase;
+}
+
+.card-information__wrapper > .caption-with-letter-spacing {
+  /* Use the heading font for the vendor name */
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  font-weight: var(--font-heading-weight);
+
+  font-size: 1.2rem;
+}
+
+.card-information__wrapper > .card-information__text {
+  /* Use the body font for the product name */
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+}
+
+.card-information__wrapper > .card-information__text,
+.card-information__wrapper > .price {
+  /* match the size of the price */
+  font-size: 2rem;
+}
+
+/* Override specificity */
+.card-information__wrapper
+  > *:not(.visually-hidden:first-child)
+  + .card-information__text,
+.card-information__wrapper > *:not(.visually-hidden:first-child) + .price {
+  /* Reduce spacing a little */
+  margin-top: 0.6rem;
+}
