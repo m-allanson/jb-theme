@@ -1,5 +1,15 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
+  {% if current_tags %}
+    {% assign title = current_tags %}
+  {% else %}
+    {% assign title = collection.title %}
+  {% endif %}
+
+  HELLO
+
+  {{ current_tags }}
+
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}">
   <div class="collection-hero__inner page-width">
     <div class="collection-hero__text-wrapper">
