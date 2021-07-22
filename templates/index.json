@@ -21,21 +21,21 @@
           "type": "column",
           "settings": {
             "title": "Local",
-            "text": "<p>We're a family-run food shop based in Crofton Park and East Dulwich, SE London.</p>"
+            "text": "<p>We're a family-run food shop based in Crofton Park and East Dulwich, SE London.<\/p>"
           }
         },
         "35d6e0c7-e841-4192-9f51-e75f09168ab8": {
           "type": "column",
           "settings": {
             "title": "Fresh",
-            "text": "<p>We stock fresh bread, fruit and vegetables. All delivered from our refrigerated van.</p>"
+            "text": "<p>We stock fresh bread, fruit and vegetables. All delivered from our refrigerated van.<\/p>"
           }
         },
         "91c3f0ec-460b-4054-baef-8e5cb7d67482": {
           "type": "column",
           "settings": {
             "title": "High Quality",
-            "text": "<p>something something</p>"
+            "text": "<p>something something<\/p>"
           }
         }
       },
@@ -51,10 +51,13 @@
         "column_alignment": "center",
         "background_style": "secondary",
         "button_label": "Shop now",
-        "button_link": "shopify://collections",
+        "button_link": "shopify:\/\/collections",
         "swipe_on_mobile": false
       }
     }
   },
-  "order": ["featured_products", "1626863441892fd9ad"]
+  "order": [
+    "featured_products",
+    "1626863441892fd9ad"
+  ]
 }

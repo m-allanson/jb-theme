@@ -6,7 +6,7 @@
     "colors_background_2": "#e7e5e4",
     "type_header_font": "itc_avant_garde_gothic_n7",
     "type_body_font": "sabon_next_n4",
-    "social_instagram_link": "https://instagram.com/jonesofbrockleyonline/",
+    "social_instagram_link": "https:\/\/instagram.com\/jonesofbrockleyonline\/",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -20,13 +20,16 @@
             }
           }
         },
-        "block_order": ["announcement-bar-0"],
-        "settings": {}
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
+        }
       },
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify://shop_images/logo.png",
+          "logo": "shopify:\/\/shop_images\/logo.png",
           "logo_width": 250,
           "logo_position": "top-left",
           "menu": "main-menu",
@@ -39,10 +42,15 @@
         "blocks": {
           "footer-0": {
             "type": "link_list",
-            "settings": { "heading": "Quick links", "menu": "footer" }
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
           }
         },
-        "block_order": ["footer-0"],
+        "block_order": [
+          "footer-0"
+        ],
         "settings": {
           "color_scheme": "background-1",
           "newsletter_enable": true,
@@ -54,6 +62,8 @@
         }
       }
     },
-    "content_for_index": []
+    "content_for_index": [
+
+    ]
   }
 }
