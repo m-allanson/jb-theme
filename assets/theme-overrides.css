@@ -6,6 +6,19 @@
   text-transform: uppercase;
 }
 
+.product__title {
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+}
+
+.caption-with-letter-spacing {
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  font-weight: var(--font-heading-weight);
+  text-transform: uppercase;
+}
+
 /**
  * Card information
  */
@@ -42,9 +55,10 @@
 }
 
 /**
- * Buttons, Badges, etc
+ * Title text
  */
 
+.product-recommendations__heading,
 .badge,
 .button {
   font-family: var(--font-heading-family);
@@ -52,3 +66,13 @@
   font-weight: var(--font-heading-weight);
   text-transform: uppercase;
 }
+
+/**
+ * Announcement bar
+ */
+ .announcement-bar__message {
+    font-family: var(--font-body-family);
+    font-style: var(--font-body-style);
+    font-weight: var(--font-body-weight);
+    font-size: 1em;
+ }
