@@ -2,7 +2,6 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false
@@ -10,6 +9,7 @@
     },
     "1626961434240cce0a": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{% if current_tags %}\n    {% assign title = current_tags %}\n  {% else %}\n    {% assign title = collection.title %}\n  {% endif %}\n\n{{ title }}"
       }
