@@ -1,60 +1,60 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "settings": {
-        "desktop_text_box_position": "flex-end"
-      },
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_label_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ]
-    },
     "featured_products": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products"
+        "title": "Our favourites",
+        "collection": "featured",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": true
       }
     },
-    "image_text": {
-      "type": "image-with-text",
+    "1626863441892fd9ad": {
+      "type": "multicolumn",
       "blocks": {
-        "heading": {
-          "type": "heading"
+        "1626863441892fd9ad-2": {
+          "type": "column",
+          "settings": {
+            "title": "Local",
+            "text": "<p>We're a family-run food shop based in Crofton Park and East Dulwich, SE London.</p>"
+          }
         },
-        "text": {
-          "type": "text"
+        "35d6e0c7-e841-4192-9f51-e75f09168ab8": {
+          "type": "column",
+          "settings": {
+            "title": "Fresh",
+            "text": "<p>We stock fresh bread, fruit and vegetables. All delivered from our refrigerated van.</p>"
+          }
         },
-        "button": {
-          "type": "button"
+        "91c3f0ec-460b-4054-baef-8e5cb7d67482": {
+          "type": "column",
+          "settings": {
+            "title": "High Quality",
+            "text": "<p>something something</p>"
+          }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
-      ]
+        "1626863441892fd9ad-2",
+        "35d6e0c7-e841-4192-9f51-e75f09168ab8",
+        "91c3f0ec-460b-4054-baef-8e5cb7d67482"
+      ],
+      "settings": {
+        "title": "About Us",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "secondary",
+        "button_label": "Shop now",
+        "button_link": "shopify://collections",
+        "swipe_on_mobile": false
+      }
     }
   },
-  "order": [
-    "image_banner",
-    "featured_products",
-    "image_text"
-  ]
+  "order": ["featured_products", "1626863441892fd9ad"]
 }
