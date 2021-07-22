@@ -6,6 +6,10 @@
   text-transform: uppercase;
 }
 
+/**
+ * Card information
+ */
+
 .card-information__wrapper > .caption-with-letter-spacing {
   /* Use the heading font for the vendor name */
   font-family: var(--font-heading-family);
@@ -35,4 +39,16 @@
 .card-information__wrapper > *:not(.visually-hidden:first-child) + .price {
   /* Reduce spacing a little */
   margin-top: 0.6rem;
+}
+
+/**
+ * Buttons, Badges, etc
+ */
+
+.badge,
+.button {
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  font-weight: var(--font-heading-weight);
+  text-transform: uppercase;
 }
