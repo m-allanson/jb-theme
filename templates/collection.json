@@ -18,10 +18,17 @@
         "enable_filtering": false,
         "enable_sorting": false
       }
+    },
+    "1626961434240cce0a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% if current_tags %}\n    {% assign title = current_tags %}\n  {% else %}\n    {% assign title = collection.title %}\n  {% endif %}\n\n{{ title }}"
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "1626961434240cce0a"
   ]
 }
