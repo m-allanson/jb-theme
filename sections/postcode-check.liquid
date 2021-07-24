@@ -1,0 +1,30 @@
+{% comment %}
+    Renders the postcode checker
+
+    Lets people see if we deliver to them. Positive results stored in localstorage
+
+{% endcomment %}
+<div id="jones-postcode-wrapper" class="hidden">
+    <label for="jones-postcode-check" class="block text-2xl">Local Delivery</label>
+    <p class="mt-2 max-w-prose">We deliver to South East London four days a week.</p>
+  <input type="text" class="w-auto mx-auto" id="jones-postcode-check" type="text" name="" value="" placeholder="SE15">
+  <div class="mt-4">
+    <p class="hidden text-green-800" id="jones-postcode-check-success">We deliver to your address.</p>
+    <p class="hidden text-red-800" id="jones-postcode-check-fail">Unfortunately we don't deliver to your address yet.</p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Postcode Check",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [],
+  "presets": [
+     {
+       "name": "Slideshow"
+     }
+  ]
+  
+}
+{% endschema %}
+
