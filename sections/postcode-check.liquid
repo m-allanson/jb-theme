@@ -5,7 +5,7 @@
 
 {% endcomment %}
 <div id="jones-postcode-wrapper" class="">
-    <label for="jones-postcode-check" class="block text-2xl">Local Delivery</label>
+    <label for="jones-postcode-check" class="block text-2xl">{{section.settings.title}}</label>
     <p class="mt-2 max-w-prose">We deliver to South East London four days a week.</p>
   <input type="text" class="w-auto mx-auto" id="jones-postcode-check" type="text" name="" value="" placeholder="SE15">
   <div class="mt-4">
@@ -16,7 +16,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.postcode-check.name",
+  "name": "Postcode Check",
   "tag": "section",
   "class": "spaced-section",
   "settings": [
@@ -24,7 +24,7 @@
       "type": "text",
       "id": "title",
       "default": "Local Delivery",
-      "label": "t:sections.postcode-check.settings.title.label"
+      "label": "Title"
     }
   ],
   "presets": [
