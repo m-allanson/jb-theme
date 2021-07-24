@@ -14,6 +14,11 @@
         "show_vendor": true
       }
     },
+    "1627139837fe2bf268": {
+      "type": "postcode-check",
+      "settings": {
+      }
+    },
     "1626863441892fd9ad": {
       "type": "multicolumn",
       "blocks": {
@@ -58,6 +63,7 @@
   },
   "order": [
     "featured_products",
+    "1627139837fe2bf268",
     "1626863441892fd9ad"
   ]
 }
