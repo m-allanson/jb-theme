@@ -58,13 +58,30 @@
  * Title text
  */
 
-.product-recommendations__heading,
 .badge,
-.button {
+.button, 
+.cart-notification__heading,
+.footer-block__heading,
+.product-recommendations__heading,
+.totals__subtotal
+{
   font-family: var(--font-heading-family);
   font-style: var(--font-heading-style);
   font-weight: var(--font-heading-weight);
   text-transform: uppercase;
+}
+
+/**
+ * Body text
+ */
+
+.link.button-label,
+.cart-notification-product__name,
+.cart-notification-product__option
+{
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
 }
 
 /**
