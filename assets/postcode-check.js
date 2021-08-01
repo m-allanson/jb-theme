@@ -115,7 +115,7 @@ class PostcodeCheck extends HTMLElement {
     }
 
     var outcode = toOutcode(input);
-    if (!matchOutcode(outcode)) {
+    if (!this.matchOutcode(outcode)) {
       return {
         match: false,
         message: `Sorry, we don't deliver to ${outcode} yet.`,
