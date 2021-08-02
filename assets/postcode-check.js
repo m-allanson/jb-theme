@@ -34,13 +34,17 @@ class PostcodeCheck extends HTMLElement {
     inputEl.addEventListener("input", this.handleChange.bind(this));
 
     // grab postcode if it's already in localstorage
-    if (this.hasStorage) inputEl.value = localStorage.getItem("jb-postcode");
-    if (inputEl.value !== "") inputEl.dispatchEvent(new Event("input"));
+    if (this.hasStorage) {
+      inputEl.value = localStorage.getItem("jb-postcode");
+    }
+    if (inputEl.value !== "") {
+      inputEl.dispatchEvent(new Event("input"));
+    }
 
     this.classList.remove("hidden");
   }
 
-  onChange(event) {}
+  // onChange(event) {}
 
   getSectionsToRender() {
     return [
@@ -137,12 +141,12 @@ class PostcodeCheck extends HTMLElement {
       successEl.classList.remove("hidden");
       failEl.classList.add("hidden");
       successEl.innerHTML = `Yes! We deliver to ${value}`;
-      if (this.hasStorage) localStorage.setItem("jones-postcode", value);
+      if (this.hasStorage) localStorage.setItem("jb-postcode", value);
     } else {
       successEl.classList.add("hidden");
       failEl.classList.remove("hidden");
       failEl.innerHTML = result.message;
-      if (this.hasStorage) localStorage.removeItem("jones-postcode");
+      if (this.hasStorage) localStorage.removeItem("jb-postcode");
     }
   }
 }

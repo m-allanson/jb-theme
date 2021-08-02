@@ -4,17 +4,21 @@
     Lets people see if we deliver to them. Positive results stored in localstorage
 
 {% endcomment %}
-<postcode-check id="jb-postcode-wrapper">
-  <div class="page-width">
-    <label for="jb-postcode-check"><h2 class="title">{{ section.settings.title }}</h2></label>
+
+<div class="page-width">
+  <div class="title-wrapper--self-padded-mobile">
+    <h2 class="title">{{ section.settings.title }}</h2>
+  </div>
+  <postcode-check id="jb-postcode-wrapper">
     <p class="mt-2 max-w-prose">We deliver to South East London four days a week.</p>
+    <label for="jb-postcode-check">Check your postcode</label>
     <input type="text" class="w-auto mx-auto" id="jb-postcode-check" type="text" name="" value="" placeholder="SE15">
     <div class="mt-4">
       <p class="hidden" id="jb-postcode-check-success"></p>
       <p class="hidden" id="jb-postcode-check-fail"></p>
     </div>
-  </div>
-</postcode-check>
+  </postcode-check>
+</div>
 
 {% schema %}
 {
